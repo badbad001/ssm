@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+    <!--驼峰命名-->
+    <settings>
+        <!--托峰命名-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!--全局别名-->
+    <typeAliases>
+        <package name="cn.itcast.pojo"/>
+    </typeAliases>
+
+
+    <!-- 选择数据源环境 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务类型 -->
+            <transactionManager type="JDBC"/>
+            <!-- 连接池类型-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value=""/>
+            </dataSource>
+        </environment>
+    </environments>
+
+   <!--引入mapper的配置文件-->
+    <mappers>
+        <!--<mapper resource="cn/itcast/mapper/UserMapper.xml"/>-->
+        <!-- 全局mapper扫描 -->
+        <package name="cn.itcast.mapper"/>
+    </mappers>
+
+</configuration>

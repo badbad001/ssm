@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itcast.mapper.DepMapper">
+
+    <resultMap id="collection1" type="cn.itcast.pojo.Dep">
+        <id column="dep_id" property="depId"></id>
+        <result column="dep_name" property="depName"></result>
+       <!--左外连接，一次性查询 -->
+        <collection property="emps" ofType="cn.itcast.pojo.Emp">
+            <id column="emp_id" property="empId"></id>
+            <result column="emp_name" property="empName"></result>
+        </collection>
+    </resultMap>
+
+   <resultMap id="collectionOnStep" type="cn.itcast.pojo.Dep">
+        <id column="dep_id" property="depId"></id>
+        <result column="dep_name" property="depName"></result>
+       <!-- 左外连接，一次性查询 -->
+        <collection property="emps" select="cn.itcast.mapper.EmpMapper.findByIdOnStep" column="dep_id">
+
+        </collection>
+    </resultMap>
+
+
+    <!--联合查询-->
+    <select id="findByIdOnUnion" resultMap="collection1">
+         select * from dep t1
+              left join emp t2
+              on t1.dep_id = t2.dep_id
+              where t1.dep_id = #{depId}
+    </select>
+
+    <!--分布查询-->
+    <select id="findByIdOnStep" resultMap="collectionOnStep">
+        select * from dep where dep_id = #{depId}
+    </select>
+
+    <select id="findById" resultType="cn.itcast.pojo.Dep">
+        select * from dep where dep_id = #{depId}
+    </select>
+
+
+
+
+</mapper>
