@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/log4j_demo/log4j_demo.iml" filepath="$PROJECT_DIR$/log4j_demo/log4j_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" filepath="$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" filepath="$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_ioc/spring_ioc.iml" filepath="$PROJECT_DIR$/spring_ioc/spring_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_ioc_annotation/spring_ioc_annotation.iml" filepath="$PROJECT_DIR$/spring_ioc_annotation/spring_ioc_annotation.iml" />
     </modules>
   </component>
 </project>

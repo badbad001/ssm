@@ -6,6 +6,8 @@
         <option value="$PROJECT_DIR$/log4j_demo/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_day01/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc_annotation/pom.xml" />
       </list>
     </option>
   </component>
