@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--将切面类交给ioc管理-->
+    <bean id="myAspectXml" class="cn.MyAspectXml"></bean>
+
+    <!--将要被加强的类交给ioc管理-->
+    <bean id="userService" class="cn.UserService"></bean>
+
+    <!--配置切面-->
+    <aop:config>
+        <aop:pointcut id="pointcut1" expression="execution(* cn.UserService.save(..))"/>
+        <aop:pointcut id="pointcut2" expression="execution(* cn.UserService.update(..))"/>
+        <aop:pointcut id="pointcut3" expression="execution(* cn.UserService.delete(..))"/>
+
+        <aop:aspect ref="myAspectXml">
+            <aop:before method="checkPri" pointcut-ref="pointcut1"></aop:before>
+            <aop:after-returning method="writeLog" returning="rtn" pointcut-ref="pointcut2"></aop:after-returning>
+            <aop:around method="aound" pointcut-ref="pointcut3"></aop:around>
+            <aop:after-throwing method="ahfterThrowing" pointcut-ref="pointcut3" throwing="e"></aop:after-throwing>
+            <aop:after method="after" pointcut-ref="pointcut3"></aop:after>
+        </aop:aspect>
+    </aop:config>
+</beans>

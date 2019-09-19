@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.serializejson.min.js"></script>
+    <script>
+        $(function () {
+            $("#registForm").submit(function () {
+
+
+                console.log($(this).serialize());//序列化把表单变成
+                //地址栏?后的形式username=tom&password=123&birthday=1997-12-1
+                console.log($(this).serializeJSON());//json对象
+                //JSON.stringify()转为的是json字符串，提交到mvc或者
+                //ajax提交都是提交字符串的，不是提交对象
+                console.log(JSON.stringify($(this).serializeJSON()));
+                $.ajax({
+                    url:"user",
+                    data:JSON.stringify($(this).serializeJSON()),
+                    contentType : "application/json;charset=utf-8",
+                    type:"post",
+                    dataType:"json",
+                    success:function (rtn) {
+                        console.log(rtn);
+                    }
+                })
+                return false;
+            })
+        })
+    </script>
+</head>
+<body>
+<form id="registForm" action="" method="post">
+    <input type="text" name="username">  <br>
+    <input type="text" name="password">  <br>
+    <input type="text" name="birthday">  <br>
+    <input type="submit" name="提交">
+</form>
+
+<form id="test" action="demo" method="post">
+    <input type="text" name="username">  <br>
+    <input type="text" name="password">  <br>
+    <input type="submit" name="提交">
+</form>
+</body>
+</html>
