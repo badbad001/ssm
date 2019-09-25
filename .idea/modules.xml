@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common_mapper_MGB/common_mapper_MGB.iml" filepath="$PROJECT_DIR$/common_mapper_MGB/common_mapper_MGB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_mapper_MGB_test/common_mapper_MGB_test.iml" filepath="$PROJECT_DIR$/common_mapper_MGB_test/common_mapper_MGB_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/log4j_demo/log4j_demo.iml" filepath="$PROJECT_DIR$/log4j_demo/log4j_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" filepath="$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" filepath="$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_mbg/mybatis_mbg.iml" filepath="$PROJECT_DIR$/mybatis_mbg/mybatis_mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybats_mgb_test/mybats_mgb_test.iml" filepath="$PROJECT_DIR$/mybats_mgb_test/mybats_mgb_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_aop/spring_aop.iml" filepath="$PROJECT_DIR$/spring_aop/spring_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_aop_annotation/spring_aop_annotation.iml" filepath="$PROJECT_DIR$/spring_aop_annotation/spring_aop_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc/spring_ioc.iml" filepath="$PROJECT_DIR$/spring_ioc/spring_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc_annotation/spring_ioc_annotation.iml" filepath="$PROJECT_DIR$/spring_ioc_annotation/spring_ioc_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_jdbcTemplate/spring_jdbcTemplate.iml" filepath="$PROJECT_DIR$/spring_jdbcTemplate/spring_jdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc_ajax/springmvc_ajax.iml" filepath="$PROJECT_DIR$/springmvc_ajax/springmvc_ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc_restful/springmvc_restful.iml" filepath="$PROJECT_DIR$/springmvc_restful/springmvc_restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm_demo/ssm_demo.iml" filepath="$PROJECT_DIR$/ssm_demo/ssm_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通用mapper_day01/通用mapper_day01.iml" filepath="$PROJECT_DIR$/通用mapper_day01/通用mapper_day01.iml" />
     </modules>
   </component>
 </project>

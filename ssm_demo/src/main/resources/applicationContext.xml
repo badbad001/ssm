@@ -32,6 +32,17 @@
 
     <!--配制sqlsessionFactoryBean-->
     <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 指定mybatis的主文件的位置 -->
+        <!-- <property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <!-- 指定xml映射文件的位置 -->
+        <!--<property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
+        <!--<property name="configuration">
+             配置驼峰命名
+            <bean class="org.apache.ibatis.session.Configuration">
+                <property name="mapUnderscoreToCamelCase" value="true"/>
+            </bean>
+        </property>
+        -->
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
@@ -50,11 +61,16 @@
         <tx:attributes>
             <!--使用默认隔离级别，默认传播行为-->
             <!--增删改方法有事务-->
-            <tx:method name="save*" propagation="REQUIRED" isolation="DEFAULT"/>
-            <tx:method name="update*" propagation="REQUIRED" isolation="DEFAULT"/>
-            <tx:method name="delete*" propagation="REQUIRED" isolation="DEFAULT"/>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="change*" propagation="REQUIRED"/>
+            <tx:method name="reset*" propagation="REQUIRED"/>
             <!--查询方法只读-->
             <tx:method name="find*" read-only="true"/>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="load*" read-only="true"/>
             <!--剩下其他方法也有事务-->
             <tx:method name="*" propagation="REQUIRED" />
         </tx:attributes>

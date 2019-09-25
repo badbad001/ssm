@@ -1,9 +1,12 @@
 package cn.itcast.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author: badbad
@@ -46,6 +49,18 @@ public class UserController {
         System.out.println("put---更新请求");
         return "success";
     }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public String update(HttpServletRequest request){
+        System.out.println("request = " + request);
+        System.out.println("put---更新请求");
+        return "success";
+    }
+
+
+    @Autowired
+    private HttpServletRequest request;
+
 
 
 
