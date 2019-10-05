@@ -23,7 +23,7 @@ public interface UserMapper {
             @Result(column = "sex",property = "userSex"),
             @Result(column = "birthday",property = "userBirthday"),
             @Result(column = "id",property = "accounts",
-               many = @Many(select = "cn.itcast.mapper.AccountMapper.findByUserId")
+               many = @Many(select = "cn.cn.itcast.mapper.AccountMapper.findByUserId")
             )
     })
     List<User> findAll();

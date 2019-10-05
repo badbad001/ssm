@@ -24,7 +24,7 @@ public interface AccountMapper {
             @Result(column = "uid",property = "uid"),
             @Result(column = "money",property = "money"),
             @Result(column = "uid",property = "user",
-                one = @One(select = "cn.itcast.mapper.UserMapper.findById")
+                one = @One(select = "cn.cn.itcast.mapper.UserMapper.findById")
             )
     })
     List<Account> findAll();

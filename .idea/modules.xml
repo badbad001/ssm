@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" filepath="$PROJECT_DIR$/mybatis_annotation/mybatis_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" filepath="$PROJECT_DIR$/mybatis_day01/mybatis_day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_mbg/mybatis_mbg.iml" filepath="$PROJECT_DIR$/mybatis_mbg/mybatis_mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_plus_MGB/mybatis_plus_MGB.iml" filepath="$PROJECT_DIR$/mybatis_plus_MGB/mybatis_plus_MGB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_plus_MGB_test/mybatis_plus_MGB_test.iml" filepath="$PROJECT_DIR$/mybatis_plus_MGB_test/mybatis_plus_MGB_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_plus_day01/mybatis_plus_day01.iml" filepath="$PROJECT_DIR$/mybatis_plus_day01/mybatis_plus_day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_plus_springboot/mybatis_plus_springboot.iml" filepath="$PROJECT_DIR$/mybatis_plus_springboot/mybatis_plus_springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybats_mgb_test/mybats_mgb_test.iml" filepath="$PROJECT_DIR$/mybats_mgb_test/mybats_mgb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_aop/spring_aop.iml" filepath="$PROJECT_DIR$/spring_aop/spring_aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_aop_annotation/spring_aop_annotation.iml" filepath="$PROJECT_DIR$/spring_aop_annotation/spring_aop_annotation.iml" />

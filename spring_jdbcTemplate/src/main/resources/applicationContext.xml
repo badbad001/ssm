@@ -14,7 +14,7 @@
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
    <!--开启组件扫描-->
-<!--	<context:component-scan base-package="cn.itcast"/>-->
+<!--	<context:component-scan base-package="cn.cn.itcast"/>-->
 
 	<!--引入jdbc的四大参数配置文件-->
 	<context:property-placeholder location="classpath:jdbc.properties"/>
@@ -32,7 +32,7 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>-->
 
-	<bean id="userDao" class="cn.itcast.dao.UserDao">
+	<bean id="userDao" class="cn.cn.itcast.dao.UserDao">
 		<property name="dataSource" ref="dataSource"/>
 	</bean>
 </beans>

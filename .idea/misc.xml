@@ -24,6 +24,11 @@
         <option value="$PROJECT_DIR$/通用mapper_mbg/pom.xml" />
         <option value="$PROJECT_DIR$/common_mapper_MGB/pom.xml" />
         <option value="$PROJECT_DIR$/common_mapper_MGB_test/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/mtabtis-plus_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus_MGB/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus_MGB_test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.itcast</groupId>
+    <groupId>cn.cn.itcast</groupId>
     <artifactId>common_mapper_MGB</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -12,19 +12,19 @@
     <properties>
         <!-- ${basedir}引用工程根目录 -->
         <!-- targetJavaProject：声明存放源码的目录位置 -->
-        <targetJavaProject>E:\IDEAworkspace\myproject\carRent_ssm\src\main\java</targetJavaProject>
+        <targetJavaProject>E:\IDEAworkspace\权限框架\shiro_demo\src\main\java</targetJavaProject>
 
         <!-- targetMapperPackage：声明MBG生成XxxMapper接口后存放的package位置 -->
-        <targetMapperPackage>cn.itcast.sys.mapper</targetMapperPackage>
+        <targetMapperPackage>cn.cn.itcast.shiro.mapper</targetMapperPackage>
 
         <!-- targetModelPackage：声明MBG生成实体类后存放的package位置 -->
-        <targetModelPackage>cn.itcast.sys.pojo</targetModelPackage>
+        <targetModelPackage>cn.cn.itcast.shiro.pojo</targetModelPackage>
 
         <!-- targetResourcesProject：声明存放资源文件和XML配置文件的目录位置 -->
-        <targetResourcesProject>E:\IDEAworkspace\myproject\carRent_ssm\src\main\resources</targetResourcesProject>
+        <targetResourcesProject>E:\IDEAworkspace\权限框架\shiro_demo\src\main\resources</targetResourcesProject>
 
         <!-- targetXMLPackage：声明存放具体XxxMapper.xml文件的目录位置 -->
-        <targetXMLPackage>cn/itcast/sys/mapper</targetXMLPackage>
+        <targetXMLPackage>cn/cn.itcast/shiro/mapper</targetXMLPackage>
 
         <!-- 通用Mapper的版本号 -->
         <mapper.version>4.1.5</mapper.version>

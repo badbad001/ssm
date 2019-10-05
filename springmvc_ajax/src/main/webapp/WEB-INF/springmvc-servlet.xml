@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="cn.itcast.controller"/>
+    <context:component-scan base-package="cn.cn.itcast.controller"/>
 
     <mvc:default-servlet-handler/>
     <mvc:annotation-driven/>

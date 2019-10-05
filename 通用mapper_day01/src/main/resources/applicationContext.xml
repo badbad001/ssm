@@ -14,7 +14,7 @@
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--扫描包扫描除了controller和controllerAdive的-->
-    <context:component-scan base-package="cn.itcast">
+    <context:component-scan base-package="cn.cn.itcast">
 
     </context:component-scan>
 
@@ -37,7 +37,7 @@
     <!--配制扫描的包，来创建mapper的代理对象,所以就不用在mapper上面加注解-->
     <!--整合通用mapper，把org改为tk-->
     <bean id="mapperScannerConfigurer" class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.itcast.mapper"/>
+        <property name="basePackage" value="cn.cn.itcast.mapper"/>
     </bean>
 
     <!--配制平台事务管理器-->

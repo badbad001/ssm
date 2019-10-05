@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.itcast.mapper.UserMapper">
-  <resultMap id="BaseResultMap" type="cn.itcast.pojo.User">
+<mapper namespace="cn.cn.itcast.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="cn.cn.itcast.pojo.User">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="birthday" jdbcType="TIMESTAMP" property="birthday" />
@@ -21,13 +21,13 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="cn.itcast.pojo.User">
+  <insert id="insert" parameterType="cn.cn.itcast.pojo.User">
     insert into user (id, username, birthday, 
       sex, address)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{birthday,jdbcType=TIMESTAMP}, 
       #{sex,jdbcType=CHAR}, #{address,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="cn.itcast.pojo.User">
+  <insert id="insertSelective" parameterType="cn.cn.itcast.pojo.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.itcast.pojo.User">
+  <update id="updateByPrimaryKeySelective" parameterType="cn.cn.itcast.pojo.User">
     update user
     <set>
       <if test="username != null">
@@ -82,7 +82,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.itcast.pojo.User">
+  <update id="updateByPrimaryKey" parameterType="cn.cn.itcast.pojo.User">
     update user
     set username = #{username,jdbcType=VARCHAR},
       birthday = #{birthday,jdbcType=TIMESTAMP},

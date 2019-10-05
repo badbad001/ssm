@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--配制组件扫描，只扫描controller和controllerAdvice的-->
-    <context:component-scan base-package="cn.itcast.controller" use-default-filters="false">
+    <context:component-scan base-package="cn.cn.itcast.controller" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
     </context:component-scan>
