@@ -54,9 +54,10 @@ public class CodeGenerator {
         gc.setAuthor("老雷");
         gc.setOpen(false);//当代码生成完成之后是否打开代码所在的文件夹
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
-
+        gc.setBaseResultMap(true);  //设置生成baseMapper
         //这个用于去掉生成的service接口有I
         gc.setServiceName("%sService");
+        gc.setBaseColumnList(true);   //生成那个基础列
         mpg.setGlobalConfig(gc);
 
 
