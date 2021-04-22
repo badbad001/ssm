@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.1</version>
+            <version>3.5.6</version>
         </dependency>
         <!-- 导入这个包用于mybatis在控制台打印运行sql情况 -->
         <dependency>
